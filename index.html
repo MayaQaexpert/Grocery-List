@@ -7,7 +7,14 @@
 <body>
     <h1> Grocery Shopping</h1>
     <div class="controls">
-        <input id="itemInput" type="text" placeholder="Add item" />
+        <input id="itemInput" type="text" placeholder="Item name" />
+        <input id="quantityInput" type="number" min="1" placeholder="Qty" style="width: 70px;" />
+        <select id="unitInput" style="width: 70px;">
+          <option value="pcs">pcs</option>
+          <option value="kg">kg</option>
+          <option value="liter">liter</option>
+        </select>
+        <input id="dateInput" type="date" style="width: 140px;" />
         <button onclick="addItem()">Add</button>
     </div>
     <ul id="groceryList"></ul>
